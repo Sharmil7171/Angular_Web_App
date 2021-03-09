@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sharmil-patel": {
+      "hosting": {
+        "angular-web-app": [
+          "sharmil-patel"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sharmil-patel"
+  }
+}
