@@ -1,9 +1,51 @@
-<app-header></app-header>
-
-<div class="content" role="main">
-
-  <!-- Highlight Card -->
-  <!-- <div class="card highlight-card card-small">
+<header>
+  <app-header></app-header>
+</header>
+<main class="main">
+  <div class="profile card-container">
+    <div class="profile__photo card">
+      <img
+        src="assets/Sharmil.png"
+        alt="Profile Photo"
+        class="profile__photo-img"
+      />
+    </div>
+    <div class="profile__content card">Profile Details</div>
+  </div>
+  <div class="card-container">
+    <div class="about-me card">
+      <div class="about-me__info">
+        <div class="about-me__info-title">About Me</div>
+        <div class="about-me__info-desc">
+          Result oriented, highly productive and analytical Software Development
+          professional with more than 7 years of experience in delivering
+          quality software solutions/products in Tech and Finance Industries
+          through continual innovation in processes, tools and techniques.
+          Technically strong hands-on background with a very positive attitude
+          and passion for excellence.
+        </div>
+      </div>
+    </div>
+    <div class="expertise card">
+      Areas of professional expertise:
+      <ul>
+        <li>Automation Framework Development</li>
+        <li>Functional and Web Service Automation Testing</li>
+        <li>Continuous Integration and Delivery (CI/CD)</li>
+        <li>Test Plans and Strategies</li>
+        <li>Test Results Tracking and Reporting</li>
+        <li>Accessibility Testing in Web/Mobile</li>
+      </ul>
+    </div>
+    <div class="skills card">
+      Skills
+    </div>
+    <div class="experience card">Experience</div>
+    <div class="education card">Education</div>
+  </div>
+</main>
+<!-- Highlight Card -->
+<!-- <div class="card highlight-card card-small">
 
     <svg id="rocket" alt="Rocket Ship" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
       <g id="Group_83" data-name="Group 83" transform="translate(-141 -696)">
@@ -23,37 +65,8 @@
 
   </div> -->
 
-  <!-- Resources -->
-  <!-- <h2>Life is Awesome !!</h2>
-
-  <div class="card-container">
-    <a class="card" target="_blank" rel="noopener" href="https://angular.io/tutorial">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
-
-      <span>Learn Angular</span>
-
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>    </a>
-
-    <a class="card" target="_blank" rel="noopener" href="https://angular.io/cli">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
-
-      <span>CLI Documentation</span>
-
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
-
-    <a class="card" target="_blank" rel="noopener" href="https://blog.angular.io/">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/></svg>
-
-      <span>Angular Blog</span>
-
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
-
-  </div> -->
-
-  <!-- Next Steps -->
-  <!-- <h2>Next Steps</h2>
+<!-- Next Steps -->
+<!-- <h2>Next Steps</h2>
   <p>What do you want to do next with your app?</p>
 
   <input type="hidden" #selection>
@@ -96,8 +109,8 @@
     </div>
   </div> -->
 
-  <!-- Terminal -->
-  <!-- <div class="terminal" [ngSwitch]="selection.value">
+<!-- Terminal -->
+<!-- <div class="terminal" [ngSwitch]="selection.value">
       <pre *ngSwitchDefault>ng generate component xyz</pre>
       <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
       <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>
@@ -106,8 +119,8 @@
       <pre *ngSwitchCase="'build'">ng build --prod</pre>
   </div> -->
 
-  <!-- Links -->
-  <!-- <div class="card-container">
+<!-- Links -->
+<!-- <div class="card-container">
     <a class="circle-link" title="Animations" href="https://angular.io/guide/animations" target="_blank" rel="noopener">
       <svg id="Group_20" data-name="Group 20" xmlns="http://www.w3.org/2000/svg" width="21.813" height="23.453" viewBox="0 0 21.813 23.453">
         <path id="Path_15" data-name="Path 15" d="M4099.584,972.736h0l-10.882,3.9,1.637,14.4,9.245,5.153,9.245-5.153,1.686-14.4Z" transform="translate(-4088.702 -972.736)" fill="#ffa726"/>
@@ -185,8 +198,8 @@
     </a>
   </div> -->
 
-  <!-- Footer -->
-  <!-- <footer>
+<!-- Footer -->
+<!-- <footer>
       Love Angular?&nbsp;
       <a href="https://github.com/angular/angular" target="_blank" rel="noopener"> Give our repo a star.
         <div class="github-star-badge">
