@@ -45,7 +45,9 @@ body {
   color: #333;
   background-image: linear-gradient(to right bottom, var(--color-grey-light-3), var(--color-grey-light-3));
   background-size: cover;
-  background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
